@@ -1,0 +1,9 @@
+name: AutoBroadcaster
+version: 1.0
+main: me.personal.Main
+author: Skull
+description: Broadcast custom messages on to your server! "Let the people know!"
+commands:
+  autobroadcaster:
+    usage: "/autobroadcaster <reload, add, set>"
+    alisases: abc
