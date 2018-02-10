@@ -12,3 +12,4 @@ Footer: '&1--------------------------------'
 Time: 30
 prefix: '&7[&bAutoBroadcaster&7]'
 noPermission: '&cYou do not have permission for this command!'
+ChatInterval: 15
