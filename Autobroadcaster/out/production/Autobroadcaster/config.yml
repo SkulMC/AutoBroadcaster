@@ -1,10 +1,6 @@
 #This is the header of the broadcast!
 WantHeader: true
 Header: '&1--------------------------------'
-#You may have as many messages as you like!
-Autobroadcast:
-      - '&1Welcome to the server!'
-      - 'hi'
 #This is the footer of the broadcast!
 WantFooter: true
 Footer: '&1--------------------------------'

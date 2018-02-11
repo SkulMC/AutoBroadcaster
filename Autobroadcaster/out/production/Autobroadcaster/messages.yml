@@ -1,0 +1,13 @@
+messages:
+  1:
+    message: '&2Welcome to the server!'
+    JSONCommand: 'help'
+    JSONLink: 'none'
+  2:
+    message: '&2We2lcome to the server!'
+    JSONCommand: 'none'
+    JSONLink: 'https://www.spigotmc.org/resources/autobroadcaster.49662/'
+  3:
+    message: 'test'
+    JSONCommand: 'none'
+    JSONLink: 'none'

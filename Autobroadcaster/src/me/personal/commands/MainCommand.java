@@ -64,12 +64,14 @@ public class MainCommand implements CommandExecutor {
                                 sb.append(args[i]).append(' ');
                             }
 
-                            pl.abclist.add(sb.toString());
-
                             p.sendMessage(ChatColor.translateAlternateColorCodes('&', pl.prefix + " &bAdded '" + sb.toString() + "' to the config!"));
-                            pl.getConfig().set("Autobroadcast", pl.abclist);
-                            pl.saveConfig();
-                            pl.reloadConfig();
+                            p.sendMessage(ChatColor.translateAlternateColorCodes('&', pl.prefix + " &cGo to the messages.yml configuration file to edit JSON materials!"));
+
+                            int length = pl.getMessagesConfig().getConfigurationSection("messages").getKeys(false).size() + 1;
+                            pl.getMessagesConfig().set("messages." + String.valueOf(length) + ".message", sb.toString());
+                            pl.getMessagesConfig().set("messages." + String.valueOf(length) + ".JSONCommand", "none");
+                            pl.getMessagesConfig().set("messages." + String.valueOf(length) + ".JSONLink", "none");
+                            pl.saveMessagesConfig();
 
                         } else {
 
